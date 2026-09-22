@@ -151,7 +151,7 @@
 // const result = removeWord(fruits, "apple");
 // console.log(result); // ["banana", "orange"]
 /////////////
-13. Отримай товари в наявності з ціною до 5000.
+// 13. Отримай товари в наявності з ціною до 5000.
 const products = [
   { name: "Ноутбук", price: 30000, inStock: true },
   { name: "Миша", price: 800, inStock: false },
@@ -167,9 +167,10 @@ const products = [
 // console.log(result);
 /////////////
 
-const callback = (array) => {return array.price < 5000 && item.inStock};
+const callback = (array) => {
+  return array.price < 5000 && array.inStock;
+};
 console.log(products.filter(callback));
-
 
 /////////////
 // 14. Отримай масив квадратів:
@@ -205,7 +206,7 @@ console.log(products.filter(callback));
 //   { id: 2, name: "Богдан", age: 17 },
 // ];
 // function names(arr) {
-//   return arr.map(function (item) { 
+//   return arr.map(function (item) {
 //     return item.name;
 //   });
 // }
@@ -214,6 +215,7 @@ console.log(products.filter(callback));
 /////////////////////////
 const users = [
   { id: 1, name: "Аня", age: 25 },
-  { id: 2, name: "Богдан", age: 17 },];
-const newArr = users.map(item => item.name);
+  { id: 2, name: "Богдан", age: 17 },
+];
+const newArr = users.map((item) => item.name);
 console.log(newArr);
