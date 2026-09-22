@@ -39,7 +39,7 @@ let result = 0;
 for (const sum of arr)
   {result = result + sum}
 console.log(result);
-// //////////////////////////////////
+//////////////////////////////////
 
 const tasks = [
   { id: 2, title: "Покласти хліб в тостер", done: false },
@@ -80,7 +80,7 @@ const animals = ["кіт", "ака", "пес", "мідь"];
 const result = animals.find((item) => item.length > 5);
 console.log(result);// undefined
 //////////////////////////////////////////
-///////////7. Знайди перше від'ємне число в масиві
+//7. Знайди перше від'ємне число в масиві
 // // [4, 0, -2, 7, -9]. Якщо його немає - виведи 'Від'ємних немає'.
 const numbers = [4, 0, -2, 7, -9];
 const result = numbers.find((item) => item < 0);
@@ -200,8 +200,8 @@ console.log(result);
 
 // 17. Отримай масив імен користувачів.
 // const users = [
-//   { id: 1, name: "Аня", age: 25 },
-//   { id: 2, name: "Богдан", age: 17 },
+ { id: 1, name: "Аня", age: 25 },
+  { id: 2, name: "Богдан", age: 17 },
 ];
 function names(arr) {
   return arr.map(function (item) {
@@ -215,5 +215,5 @@ const users = [
   { id: 1, name: "Аня", age: 25 },
   { id: 2, name: "Богдан", age: 17 },
 ];
-// const newArr = users.map((item) => item.name);
-// console.log(newArr);
+const newArr = users.map((item) => item.name);
+console.log(newArr);
